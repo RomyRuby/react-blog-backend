@@ -1,5 +1,3 @@
-
-
 const Page301 = () => {
   return (
     <div className='page301'>

@@ -3,6 +3,8 @@ import { Breadcrumb, Layout, theme } from 'antd';
 import { Outlet } from 'react-router-dom';
 import MainMenu from '@/components/MainMenu'
 
+import logoImg from "@/assets/img/logo.png"
+
 const { Header, Content, Footer, Sider } = Layout;
 
 const Home: React.FC = () => {
@@ -15,7 +17,10 @@ const Home: React.FC = () => {
     <Layout style={{ minHeight: '100vh' }}>
       {/* 侧边栏 */}
       <Sider collapsible collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
-        <div className="demo-logo-vertical" />
+        <div className="demo-logo-vertical">
+          <img src={logoImg} alt="logo" />
+          <span>Romy's Blog Management</span>
+        </div>
         <MainMenu />
       </Sider>
       {/* 右边内容 */}
