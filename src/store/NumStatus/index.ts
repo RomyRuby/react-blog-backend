@@ -17,7 +17,7 @@ const store =  {
     asyncAdd1(dispath:Function){
       setTimeout(()=>{
         dispath({type:"add1"})
-      })
+      },2000)
     }
   },
   actionNames:{}
